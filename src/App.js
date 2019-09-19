@@ -9,6 +9,7 @@ import ShoppingCart from './components/ShoppingCart';
 
 // Context
 import { ProductContext } from './contexts/ProductContext';
+import { CartContext } from './contexts/CartContext';
 
 function App() {
 	const [products] = useState(data);
