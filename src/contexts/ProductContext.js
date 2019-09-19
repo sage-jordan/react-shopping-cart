@@ -4,10 +4,10 @@ import data from '../data';
 export const ProductContext = createContext();
 
 export const ProductProvider = props => {
-    const [product, addItem] = useState(data);
+    const [products, addItem] = useState(data);
 
     return (
-        <ProductContext.Provider value={[product, addItem ]}>
+        <ProductContext.Provider value={{ products, addItem }}>
             {props.children}
         </ProductContext.Provider>
     );
