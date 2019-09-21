@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import { Route } from 'react-router-dom';
 
 // Components
@@ -23,7 +23,7 @@ function App() {
 		<div className="App">
 			<ProductContext.Provider value={{ products, addItem }}>
                 <CartContext.Provider value={{ cart }}>
-					
+
 					<Navigation />
 
 					{/* Routes */}
