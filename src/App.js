@@ -12,7 +12,7 @@ import { CartContext } from "./contexts/CartContext";
 import { ProductContext } from "./contexts/ProductContext";
 
 function App() {
-  const [cart, setCart] = useState(data);
+  const [cart, setCart] = useState([]);
   const [products, setProducts] = useState(data);
 
   const addItem = item => {
@@ -21,7 +21,7 @@ function App() {
 
   const removeItem = item => {
     // console.log(item.id);
-    setCart(cart.filter(obj => obj.id != item.id));
+    setCart(cart.filter(obj => obj.id !== item.id));
   };
 
   return (
